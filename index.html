@@ -1,0 +1,33 @@
+
+<!DOCTYPE html><html lang="no"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Klostervegen 1</title>
+<style>
+*{margin:0;box-sizing:border-box}body{font-family:Arial;background:#f6f4ef;color:#222}
+.hero{height:95vh;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('bilder/utvendig.jpg') center/cover no-repeat;display:flex;align-items:center;color:#fff}
+.wrap{max-width:700px;margin-left:6%}.tag{display:inline-block;background:#c79b4d;padding:10px 16px;border-radius:8px;margin-bottom:18px}
+h1{font-size:66px;line-height:1.05;margin-bottom:20px}p{font-size:22px;line-height:1.6}
+.btn{display:inline-block;margin:25px 10px 0 0;padding:15px 28px;border-radius:8px;text-decoration:none;font-weight:bold}
+.gold{background:#c79b4d;color:#fff}.white{border:2px solid #fff;color:#fff}
+section{max-width:1400px;margin:auto;padding:60px 30px}
+h2{font-size:42px;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.grid img{width:100%;height:220px;object-fit:cover;border-radius:12px;cursor:pointer}
+.lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);align-items:center;justify-content:center}.lb img{max-width:95%;max-height:95%}
+</style></head><body>
+<header class="hero"><div class="wrap">
+<div class="tag">📍 KLOSTERVEGEN 1, SKIEN</div>
+<h1>Stor familiebolig<br>med utleiemuligheter</h1>
+<p>Ca. 250 m² med hovedbolig, innredet kjeller og egen leilighet over dobbelgarasje.</p>
+<a class="btn gold" href="#hoved">Se bilder</a><a class="btn white" href="#kontakt">Kontakt</a>
+</div></header>
+
+<section id="hoved"><h2>Hovedbolig</h2><div class="grid">
+<img src='bilder/utvendig.jpg'><img src='bilder/samlebilde.jpg'><img src='bilder/stue3.jpg'><img src='bilder/stue4.jpg'><img src='bilder/stuechatgpt.jpg'><img src='bilder/stuekjokken.jpg'><img src='bilder/kjokken.jpg'><img src='bilder/gang.jpg'><img src='bilder/bilde1.jpg'><img src='bilder/bilde2.jpg'><img src='bilder/bilde3.jpg'></div></section><section><h2>Garasjeleilighet</h2><div class='grid'><img src='bilder/IMG_7677.jpeg'><img src='bilder/IMG_7678.jpeg'><img src='bilder/IMG_7679.jpeg'><img src='bilder/IMG_7680.jpeg'><img src='bilder/IMG_7682.jpeg'><img src='bilder/IMG_7683.jpeg'><img src='bilder/IMG_7684.jpeg'><img src='bilder/IMG_7685.jpeg'><img src='bilder/IMG_7686.jpeg'><img src='bilder/IMG_7687.jpeg'><img src='bilder/IMG_7688.jpeg'><img src='bilder/IMG_7689.jpeg'><img src='bilder/IMG_7690.jpeg'><img src='bilder/IMG_7691.jpeg'><img src='bilder/IMG_7692.jpeg'><img src='bilder/IMG_7693.jpeg'><img src='bilder/IMG_7694.jpeg'><img src='bilder/IMG_7695.jpeg'><img src='bilder/IMG_7696.jpeg'><img src='bilder/IMG_7697.jpeg'><img src='bilder/IMG_7698.jpeg'><img src='bilder/IMG_7699.jpeg'><img src='bilder/IMG_7700.jpeg'></div></section><section><h2>Kjeller</h2><p>Nyoppussede rom i kjeller.</p><div class='grid'><img src='bilder/IMG_7705.jpeg'><img src='bilder/IMG_7706.jpeg'><img src='bilder/IMG_7710.jpeg'><img src='bilder/stue.jpeg'><img src='bilder/samlebilde.jpeg'><img src='bilder/bad.jpeg'></div></section>
+<section id='kontakt'><h2>Kontakt</h2><p>E-post: <b>godtfred1000@gmail.com</b></p></section>
+<div class='lb' id='lb'><img id='li'></div>
+<script>
+const lb=document.getElementById('lb'),li=document.getElementById('li');
+document.querySelectorAll('img').forEach(i=>i.onclick=()=>{li.src=i.src;lb.style.display='flex';});
+lb.onclick=()=>lb.style.display='none';
+</script></body></html>
