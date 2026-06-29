@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Klostervegen 8A og 8B</title>
+<title>Klostervegen 8AB</title>
 <style>
 :root{--bg:#f7f3ec;--ink:#202020;--muted:#626262;--panel:#fffdf8;--line:#e5ded2;--gold:#bd8840;--dark:#181818}
 *{box-sizing:border-box}
@@ -22,6 +22,7 @@ img{display:block;max-width:100%}
 .tag{display:inline-block;padding:8px 13px;border-radius:8px;background:var(--gold);font-size:13px;font-weight:800}
 h1{max-width:780px;margin:18px 0 14px;font-size:clamp(34px,8vw,68px);line-height:1.04}
 .lead{max-width:690px;margin:0;font-size:clamp(17px,3vw,22px);color:rgba(255,255,255,.92)}
+.price{display:inline-flex;align-items:center;margin-top:18px;padding:10px 14px;border-radius:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);font-size:clamp(18px,3vw,24px);font-weight:800}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:800}
 .primary{background:var(--gold);color:#fff}.secondary{border:2px solid #fff;color:#fff}
@@ -44,6 +45,7 @@ h3{margin:26px 0 8px;font-size:21px}
 footer{padding:28px 18px;background:var(--dark);color:rgba(255,255,255,.82);text-align:center}
 .lightbox{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(0,0,0,.92)}
 .lightbox.open{display:flex}.lightbox img{max-width:min(100%,1180px);max-height:86svh;border-radius:8px;object-fit:contain}
+.lightbox-hint{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);color:rgba(255,255,255,.78);font-size:13px;font-weight:700}
 .lightbox button{position:absolute;width:46px;height:46px;border:1px solid rgba(255,255,255,.3);border-radius:8px;background:rgba(0,0,0,.45);color:#fff;font-size:28px;cursor:pointer}
 .close{top:16px;right:16px}.prev{left:16px;top:50%;transform:translateY(-50%)}.next{right:16px;top:50%;transform:translateY(-50%)}
 .lightbox button:hover,.lightbox button:focus-visible{background:rgba(189,136,64,.92);outline:none}
@@ -56,14 +58,14 @@ footer{padding:28px 18px;background:var(--dark);color:rgba(255,255,255,.82);text
 }
 @media(max-width:560px){
   .actions{display:grid}.btn{width:100%}.photo,.photo:first-child{grid-column:span 12}.photo img{aspect-ratio:16/11}
-  .contact{display:block}.contact p+p{margin-top:10px}.prev,.next{top:auto;bottom:18px;transform:none}.prev{left:calc(50% - 58px)}.next{right:calc(50% - 58px)}
+  .contact{display:block}.contact p+p{margin-top:10px}.prev,.next{top:auto;bottom:48px;transform:none}.prev{left:calc(50% - 58px)}.next{right:calc(50% - 58px)}
 }
 </style>
 </head>
 <body>
 <header class="topbar">
   <div class="nav-inner">
-    <a class="brand" href="#top">Klostervegen 8A og 8B</a>
+    <a class="brand" href="#top">Klostervegen 8AB</a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Åpne meny">☰</button>
     <nav class="nav-links" id="nav-links" aria-label="Hovedmeny">
       <a href="#beskrivelse">Beskrivelse</a>
@@ -79,9 +81,10 @@ footer{padding:28px 18px;background:var(--dark);color:rgba(255,255,255,.82);text
 
 <div class="hero" id="top">
   <div class="hero-content">
-    <span class="tag">KLOSTERVEGEN 8A OG 8B</span>
+    <span class="tag">Klostervegen 8A og B</span>
     <h1>Stor familiebolig med utleiemuligheter</h1>
-    <p class="lead">Ca. 250 m² bolig med hoveddel, innredet kjeller og leilighet over dobbelgarasje.</p>
+    <p class="lead">Meget sentralt beliggende eiendom i Skien, med ca. 250 m² bolig fordelt på hoveddel, innredet kjeller og leilighet over dobbelgarasje.</p>
+    <div class="price">Prisantydning: kr 7 250 000</div>
     <div class="actions">
       <a class="btn primary" href="#beskrivelse">Les beskrivelsen</a>
       <a class="btn secondary" href="#hoved">Se bildene</a>
@@ -93,7 +96,8 @@ footer{padding:28px 18px;background:var(--dark);color:rgba(255,255,255,.82);text
   <section id="beskrivelse">
     <h2>Beskrivelse</h2>
     <div class="info">
-      <p>Stor og innholdsrik familiebolig med sentral beliggenhet, energieffektive løsninger og gode utleiemuligheter.</p>
+      <p>Stor og innholdsrik familiebolig med meget sentral beliggenhet i Skien. Her bor du med kort vei til sentrum, dagligvare, buss, treningssenter, fritidstilbud, sykehus og kjøpesenter, samtidig som eiendommen gir god plass og fleksible bruksmuligheter.</p>
+      <p><strong>Prisantydning:</strong> kr 7 250 000</p>
       <h3>Tekniske kvaliteter</h3>
       <ul>
         <li>Vannbåren gulvvarme i hele kjelleren og første etasje, samt bad i andre etasje.</li>
@@ -147,13 +151,14 @@ footer{padding:28px 18px;background:var(--dark);color:rgba(255,255,255,.82);text
   </section>
 </main>
 
-<footer>© Klostervegen 8A og 8B</footer>
+<footer>© Klostervegen 8AB</footer>
 
 <div class="lightbox" id="lightbox" aria-hidden="true">
   <button class="close" type="button" aria-label="Lukk">×</button>
   <button class="prev" type="button" aria-label="Forrige bilde">‹</button>
   <img id="lightbox-image" src="" alt="">
   <button class="next" type="button" aria-label="Neste bilde">›</button>
+  <div class="lightbox-hint">Sveip for å bla</div>
 </div>
 
 <script>
@@ -259,6 +264,8 @@ const closeButton = lightbox.querySelector(".close");
 const prevButton = lightbox.querySelector(".prev");
 const nextButton = lightbox.querySelector(".next");
 let currentIndex = 0;
+let touchStartX = 0;
+let touchStartY = 0;
 
 function showImage(index) {
   currentIndex = (index + allImages.length) % allImages.length;
@@ -285,6 +292,18 @@ nextButton.addEventListener("click", () => showImage(currentIndex + 1));
 lightbox.addEventListener("click", (event) => {
   if (event.target === lightbox) closeLightbox();
 });
+lightbox.addEventListener("touchstart", (event) => {
+  if (!event.changedTouches.length) return;
+  touchStartX = event.changedTouches[0].clientX;
+  touchStartY = event.changedTouches[0].clientY;
+}, { passive: true });
+lightbox.addEventListener("touchend", (event) => {
+  if (!event.changedTouches.length) return;
+  const diffX = event.changedTouches[0].clientX - touchStartX;
+  const diffY = event.changedTouches[0].clientY - touchStartY;
+  if (Math.abs(diffX) < 50 || Math.abs(diffX) < Math.abs(diffY)) return;
+  showImage(currentIndex + (diffX < 0 ? 1 : -1));
+}, { passive: true });
 document.addEventListener("keydown", (event) => {
   if (!lightbox.classList.contains("open")) return;
   if (event.key === "Escape") closeLightbox();
