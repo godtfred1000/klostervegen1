@@ -35,6 +35,7 @@ h3{margin:26px 0 8px;font-size:21px}
 .info{background:var(--panel);border:1px solid var(--line);border-radius:8px;box-shadow:0 18px 42px rgba(32,32,32,.12);padding:clamp(20px,4vw,34px)}
 .info p:first-child{margin-top:0}.info ul{margin:8px 0 0;padding-left:20px}.info li+li{margin-top:6px}
 .map-frame{width:100%;height:360px;margin:18px 0;border:0;border-radius:8px;box-shadow:0 10px 24px rgba(0,0,0,.09)}
+.map-image{width:100%;margin:18px 0;border-radius:8px;box-shadow:0 10px 24px rgba(0,0,0,.09)}
 .note{margin-bottom:18px;padding:16px;border-left:5px solid var(--gold);border-radius:8px;background:#fff7d9}
 .gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
 .photo{grid-column:span 4;padding:0;border:0;border-radius:8px;background:#ddd;box-shadow:0 10px 24px rgba(0,0,0,.09);overflow:hidden;cursor:pointer}
@@ -101,8 +102,9 @@ footer{padding:28px 18px;background:var(--dark);color:rgba(255,255,255,.82);text
   <section id="beskrivelse">
     <h2>Beskrivelse</h2>
     <div class="info">
-      <p>Stor og innholdsrik familiebolig med meget sentral beliggenhet i Skien. Her bor du med kort vei til sentrum, dagligvare, buss, treningssenter, fritidstilbud, sykehus og kjøpesenter, samtidig som eiendommen gir god plass og fleksible bruksmuligheter.</p>
+      <p>Stor og innholdsrik familiebolig med meget sentral beliggenhet i Skien. Eiendommen ligger i en blindvei, samtidig som du har kort vei til sentrum, dagligvare, buss, treningssenter, fritidstilbud, sykehus og kjøpesenter.</p>
       <p><strong>Prisantydning:</strong> kr 7 250 000</p>
+      <p><strong>Tomt:</strong> ca. 1014 m². Det kan på sikt være mulig å utvide tomten til ca. 1115 m² dersom man kommer til enighet om kjøp av tilleggsarealet utenfor dagens tomtegrense.</p>
       <h3>Tekniske kvaliteter</h3>
       <ul>
         <li>Vannbåren gulvvarme i hele kjelleren og første etasje, samt bad i andre etasje.</li>
@@ -117,11 +119,14 @@ footer{padding:28px 18px;background:var(--dark);color:rgba(255,255,255,.82);text
         <li>To elektriske garasjeporter med appstyring.</li>
         <li>Lys i de fleste rom kan styres via app.</li>
         <li>Opparbeidet gårdsplass med heller. Etter ca. 16 år er det fortsatt ingen synlige kjørespor eller setninger.</li>
+        <li>Det er lagt vannrør i hele gårdsplassen for mulig snøsmelting. Anlegget er ikke tilkoblet.</li>
+        <li>Boligen har flere tekniske løsninger og rørføringer som kan være særlig interessante for teknisk interesserte og fagfolk som ønsker å utnytte potensialet videre.</li>
         <li>Det har tidligere vært godkjent basseng på terrassen. Under terrassen ligger ferdig isolasjon der bassenget sto. Terrassen er tettet igjen, men det er mulig å tilrettelegge for nytt basseng.</li>
       </ul>
       <h3>Beliggenhet</h3>
       <ul>
         <li>Gangavstand til Skien sentrum.</li>
+        <li>Eiendommen ligger i en blindvei.</li>
         <li>Ca. 100 meter til Meny Saga, Coop Prix, bussholdeplass og treningssenter.</li>
         <li>Gangavstand til Skien Fritidspark, Telemark sentralsykehus og Herkules kjøpesenter.</li>
       </ul>
@@ -165,7 +170,9 @@ footer{padding:28px 18px;background:var(--dark);color:rgba(255,255,255,.82);text
   <section id="kart">
     <div class="section-head"><h2>Kart og beliggenhet</h2></div>
     <div class="info">
-      <p>Klostervegen 8A ligger meget sentralt til i Skien, med kort vei til sentrum, dagligvare, buss, treningssenter, fritidstilbud, sykehus og kjøpesenter.</p>
+      <p>Klostervegen 8A ligger meget sentralt til i Skien, men samtidig i en blindvei. Her er det kort vei til sentrum, dagligvare, buss, treningssenter, fritidstilbud, sykehus og kjøpesenter.</p>
+      <p>Tomten er ca. 1014 m². Det kan på sikt være mulig å utvide tomten til ca. 1115 m² dersom man kommer til enighet om kjøp av tilleggsarealet markert som trekanten utenfor dagens tomt.</p>
+      <img class="map-image" src="https://raw.githubusercontent.com/godtfred1000/klostervegen8ab/main/bilder/tomt-kart.png" alt="Kartutsnitt som viser tomt og mulig tilleggsareal" loading="lazy">
       <iframe class="map-frame" title="Kart til Klostervegen 8A, Skien" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Klostervegen%208A%2C%20Skien&output=embed"></iframe>
       <p><a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Klostervegen+8A%2C+Skien" target="_blank" rel="noopener">Åpne i Google Maps</a></p>
     </div>
